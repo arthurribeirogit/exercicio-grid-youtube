@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Roboto:wght@300;700&display=swap');
+
+h1, p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo-sugerido {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.video p {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.titulo-destaque {
+     font-size: 18px;
+     margin-bottom: 10px;
+}
+
+.visualizacao {
+    margin-bottom: 10px;
+}
+.container {
+    background-color: #F7F7F7;
+    padding-top: 38px;
+    padding-left: 35px;
+    padding-right: 35px;
+    max-width: 900px;
+    display: grid;
+    grid-gap: 17px;
+    grid-template-areas: 
+    "video-destaque propaganda"
+    "video-destaque videos-sugeridos"
+    "informacoes-video-destaque videos-sugeridos";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
+}
+
+
+.video-destaque {
+    grid-area: video-destaque;
+    
+}
+
+
+.propaganda {
+    
+    grid-area: propaganda;
+}
+
+.informacoes-video-destaque {
+    margin-top: 10px;
+    grid-area: informacoes-video-destaque;
+}
+
+.videos-sugeridos {
+    grid-area: videos-sugeridos;
+}
+
+.video {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* .video-1 {
+    background-color: orange;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+
+.video-2 {
+    background-color: orange;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.video-3 {
+    background-color: orange;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+ */
